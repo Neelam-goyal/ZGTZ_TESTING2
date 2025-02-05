@@ -1,0 +1,25 @@
+unmanaged implementation in class zbp_cds_journal_entry unique;
+strict ( 2 );
+
+define behavior for zcds_Journal_Entry //alias <alias_name>
+//persistent table zjounalentry_1
+lock master
+authorization master ( instance )
+//etag master <field_name>
+{
+//  create;
+//  update;
+//  delete;
+  field ( readonly ) JOURNAL_ENTRY_NO, LineItem;
+//   action print ;
+//   mapping for zjounalentry_1
+//  {
+//      JOURNAL_ENTRY_NO = accountingdocument;
+//      LineItem         = accountingdocumentitem;
+//      JOURNAL_ENTRY_TY = accountingdocumenttype;
+//      JOURNAL_ENTRY_DT = amountintransactioncurrency;
+//      Amount           = companycode;
+//      currency         = companycodecurrency;
+//      Companycode      = documentdate;
+//  }
+}
